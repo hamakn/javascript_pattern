@@ -52,6 +52,7 @@ var http = {
             script = document.createElement('script');
         
         sql = sql.replace('%ID%', ids.join('","'));
+        console.log(sql);
         sql = encodeURIComponent(sql);
         
         url += sql + '&' + format + '&' + handler;
